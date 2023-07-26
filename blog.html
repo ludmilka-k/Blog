@@ -13,90 +13,126 @@
   <body>
     <!-- Blog page -->
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="Jhon logo" />
-        </a>
-        <ul class="list">
-          <li>
-            <a class="link current" href="./blog.html">Blog</a>
-          </li>
-          <li>
-            <a  class="link" href="./work.html">Work</a>
-          </li>
-          <li>
-            <a class="link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="link">
+            <img src="./images/icon.svg" alt="My logo" />
+          </a>
+          <ul class="list header-list">
+            <li>
+              <a class="link nav-link current" href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="link nav-link" href="./work.html">Work</a>
+            </li>
+            <li>
+              <a class="link nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Blog content -->
     <main>
       <section>
-        <h1 class="page-title">Blog</h1>
-        <ul class="list">
-          <li class="post">
-            <h2 class="post-title">Post Title</h2>
-            <time class="post-date" datetime="2021-02-12">12 Feb 21</time> | <span class="post-type">Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-          <li class="post">
-            <h2 class="post-title">Post Title</h2>
-            <time class="post-date" datetime="2021-02-12">12 Feb 21</time> | <span class="post-type">Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-          <li class="post">
-            <h2 class="post-title">Post Title</h2>
-            <time class="post-date" datetime="2021-02-12">12 Feb 21</time> | <span class="post-type">Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-          <li class="post">
-            <h2 class="post-title">Post Title</h2>
-            <time class="post-date" datetime="2021-02-12">12 Feb 21</time> | <span class="post-type">Design System</span>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </p>
-          </li>
-        </ul>
+        <div class="container blog-container">
+          <h1 class="page-title">Blog</h1>
+          <ul class="list">
+            <li class="post post-margin">
+              <h2 class="post-title">Snake Game</h2>
+              <time class="post-date" datetime="2023-07-24">24 Jul 23</time> | <span class="post-type">Simple Game</span>
+              <p>
+                I am passionate about web development and even in my free time, together with my children,
+                I created a simple <a
+                  class="link-title"
+                  href="https://iridescent-sawine-f5f9c1.netlify.app"
+                  target="_blank"
+                  title="Snake"
+                  rel="noopener nofollow">"Snake game"</a>. You can share it with your friends.
+              </p>
+            </li>
+            <li class="post post-margin">
+              <h2 class="post-title">Cinemania</h2>
+              <time class="post-date" datetime="2023-06-09">09 Jun 23</time> | <span class="post-type">Search Platform</span>
+              <p>
+                I have been a new challenge and accomplishment. Was a Scrum Master in the project
+                <a
+                  class="link-title"
+                  href="https://iridescent-sawine-f5f9c1.netlify.app"
+                  target="_blank"
+                  title="Cinemania"
+                  rel="noopener nofollow"
+                >"Cinemania"</a>
+                ( 13 people, 8 days). But in the middle of the project two people was canceled their participation.
+                I rescheduled the tasks and the team was able to complete the project by the deadline.
+              </p>
+            </li>
+            <li class="post post-margin">
+              <h2 class="post-title">Mimino</h2>
+              <time class="post-date" datetime="2023-02-23">23 Feb 23</time> | <span class="post-type">Landing Site</span>
+              <p>
+                I am happy to share my first major achievement.Was a Team Leader in the team project
+                <a
+                  class="link-title"
+                  href="https://iridescent-sawine-f5f9c1.netlify.app"
+                  target="_blank"
+                  title="Snake"
+                  rel="noopener nofollow"
+                >"Mimino”</a>
+                ( 9 people, 1 week). Multi-page responsive website for a restaurant and hotel complex.
+                We completed all the tasks successfully.
+              </p>
+            </li>
+            <li class="post post-margin">
+              <h2 class="post-title">Banderogoose</h2>
+              <time class="post-date" datetime="2022-10-12">12 Oct 22</time> | <span class="post-type">Design System</span>
+              <p>
+                I became interested in the IT field and decided to take part in the marathon Test drive of professions
+                from GoIT. This is a very interesting adventure, I invite you to launch my
+                <a
+                  class="link-title"
+                  href="https://comforting-monstera-9edea0.netlify.app/"
+                  target="_blank"
+                  title="Goose"
+                  rel="noopener nofollow"
+                >banderogoose.</a>
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <address class="text-address">
-        <ul class="list">
-          <li>
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/figma.svg" alt="Link to Figma" />
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/twitter.svg" alt="Link to Twitter" />
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-              <img src="./images/instagram.svg" alt="Link to Instagram" />
-            </a>
-          </li>
-        </ul>
-        <p class="copyright">&copy; 2022 Your Name. All rights reserved.</p>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <address class="text-address">
+          <ul class="list footer-list">
+            <li>
+              <a class="link" href="https://t.me/LKurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://www.linkedin.com/in/ludmila-kurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://github.com/ludmilka-k?tab=repositories" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">&copy; 2023 Ludmila Kurochkina. All rights reserved.</p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

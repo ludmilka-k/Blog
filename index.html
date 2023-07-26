@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jhon Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,112 +13,185 @@
   <body>
     <!-- Main page  -->
     <!-- Header -->
-    <header>
-        <nav>
-            <a href="./index.html">
-            <img src="./images/logo.svg" alt="Jhon logo" />
-            </a>
-            <ul class="list">
-                <li>
-                    <a class="link" href="./blog.html">Blog</a>
-                </li>
-                <li>
-                    <a class="link" href="./work.html">Work</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="./index.html" class="link">
+                    <img src="./images/icon.svg" alt="My logo" />
+                </a>
+                <ul class="list header-list">
+                    <li>
+                        <a class="link nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="link nav-link" href="./work.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="link nav-link" href="./contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Main content -->
     <main>
         <!-- Section Hero -->
         <section>
-            <h1 class="hero-title">
-                Hi, I’m John! <br/>
-                Creative Technologist
-            </h1>
-            <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <a class="button-primary" href="./work.html">Check my Work</a>
-            <img src="./images/hero_image.png" alt="Jhon portrait" width: 243px; height: 243px;>
+            <div class="container hero-container">
+                <img src="./images/img-by-cap.jpg" alt="Jhon portrait" width="243" class="hero-image">
+                <div class="hero-wrap">
+                    <h1 class="hero-title">
+                        Hi, I’m Ludmila! <br/>
+                        Frontend Developer
+                    </h1>
+                    <p class="hero-text">
+                        Front-End Developer with knowledge of HTML, CSS, JavaScript. My next step - React, Node. Ready
+                        to learn new things, attention to details, friendly team player. I take tasks seriously and know
+                        how to prioritize. Interested in applying all the knowledge and experience to build great products.
+                    </p>
+                    <a class="button-primary" href="./work.html">Check my Work</a>
+                </div>
+            </div>
         </section>
-        <section class="section-brand">
-            <h2 class="section-title">Recent Posts</h2>
-            <a class="view-all-link" href="./blog.html">View all</a>
-            <ul class="list">
-                <li class="post">
-                    <h3 class="post-title">Post Title</h3>
-                    <time class="post-date" datetime="2021-02-12">12 Feb 21</time> <span class="post-type">| Design System</span>
-                    <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit officia consequat duis enim velit mollit. Exercitation
-                    veniam consequat sunt nostrud amet.
-                    </p>
-                </li>
-                <li class="post">
-                    <h3 class="post-title">Post Title</h3>
-                    <time class="post-date" datetime="2021-02-12">12 Feb 21</time> <span class="post-type">| Design System</span>
-                    <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit officia consequat duis enim velit mollit. Exercitation
-                    veniam consequat sunt nostrud amet.
-                    </p>
-                </li>
-            </ul>
+        <section class="section section-brand">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="section-title">Recent Posts</h2>
+                    <a class="view-all-link" href="./blog.html">View all</a>
+                </div>
+                <ul class="list post-list">
+                    <li class="post">
+                        <h3 class="post-title">Snake Game</h3>
+                        <time class="post-date" datetime="2023-07-24">24 Jul 23</time> <span class="post-type">| Simple Game</span>
+                        <p class="text">
+                            I am passionate about web development and even in my free time, together with my children,
+                            I created a simple <a
+                                class="link-title"
+                                href="https://iridescent-sawine-f5f9c1.netlify.app"
+                                target="_blank"
+                                title="Snake"
+                                rel="noopener nofollow">"Snake game"</a>. You can share it with your friends.
+                        </p>
+                    </li>
+                    <li class="post">
+                        <h3 class="post-title">Banderogoose</h3>
+                        <time class="post-date" datetime="2022-10-12">12 Oct 22</time> <span class="post-type">| Design System</span>
+                        <p class="text">
+                            I became interested in the IT field and decided to take part in the marathon Test drive of professions
+                            from GoIT. This is a very interesting adventure, I invite you to launch my
+                            <a
+                                    class="link-title"
+                                    href="https://comforting-monstera-9edea0.netlify.app/"
+                                    target="_blank"
+                                    title="Goose"
+                                    rel="noopener nofollow"
+                            >banderogoose.</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2 class="section-title">Featured Work</h2>
-            <a class="view-all-link" href="./work.html">View all</a>
-            <ul class="list">
-                <li class="work-project">
-                    <img src="./images/dashboard.jpg" alt="Designing Dashboards">
-                    <h3 class="work-project-title">Designing Dashboards</h3>
-                    <time class="work-project-year" datetime="2021-02-12">2020</time> | <span class="work-project-type">Dashboard</span>
-                    <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit officia consequat duis enim velit mollit. Exercitation
-                    veniam consequat sunt nostrud amet.
-                    </p>
-                </li>
-                <li class="work-project">
-                    <img src="./images/illustration.jpg" alt="Vibrant Portraits">
-                    <h3 class="work-project-title">Vibrant Portraits</h3>
-                    <time class="work-project-year" datetime="2021-02-12">2018</time> | <span class="work-project-type">Illustration</span>
-                    <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                    sint. Velit officia consequat duis enim velit mollit. Exercitation
-                    veniam consequat sunt nostrud amet.
-                    </p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="section-title">Featured Work</h2>
+                    <a class="view-all-link" href="./work.html">View all</a>
+                </div>
+                <ul class="list">
+                    <li class="work-project">
+                        <a href="https://ludmilka-k.github.io/team-light-balance/"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Site"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/mimino-collage.jpeg" alt="Landing site" width="276">
+                                <p class="text-overlay">
+                                    [HTML, CSS, JavaScript, Vite ]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Landing site</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">Mimino</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Team Lead, developer.</span>
+                            <p class="text">
+                                A website of a hotel-restaurant complex Mimino. Answerable for: setting repository, code
+                                review,resolving conflicts, overall composing of the project, developer of footer.
+                            </p>
+<!--                            <p>-->
+<!--                                Accomplishments: Was a Team Leader in the team project "Mimino”( 9 people, 1 week).-->
+<!--                                We completed all the tasks successfully.-->
+<!--                            </p>-->
+                        </div>
+                    </li>
+                    <li class="work-project">
+                        <a href="https://bogdantitsky.github.io/js-team-project-12/"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Platform"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/cinemania-trends.jpg" alt="Search platform" width="276" >
+                                <p class="text-overlay">
+                                    [ HTML, CSS, JavaScript, REST API, Vite ]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Search Platform</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">Cinemania</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Scrum Master, developer.</span>
+                            <p class="text">
+                                A website of a Cinemania with an adaptive layout. Answerable for: sprint planning of
+                                tasks in Trello, control the deadline, developer of Weekly trends section, star rating,
+                                script for modal window.
+                            </p>
+<!--                            <p>-->
+<!--                                Accomplishments: Was a Scrum Master in the project "Cinemania"( 13 people, 8 days).-->
+<!--                                But in the middle of the project two people was canceled their participation.-->
+<!--                                I rescheduled the tasks and the team was able to complete the project by the deadline.-->
+<!--                            </p>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <address class="text-address">
-            <ul class="list">
-                <li>
-                    <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                    <img src="./images/figma.svg" alt="Link to Figma" />
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                    <img src="./images/twitter.svg" alt="Link to Twitter" />
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                    <img src="./images/instagram.svg" alt="Link to Instagram" />
-                    </a>
-                </li>
-            </ul>
-            <p class="copyright">&copy; 2022 Your Name. All rights reserved.</p>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <address class="text-address">
+                <ul class="list footer-list">
+                    <li>
+                        <a class="link" href="https://t.me/LKurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.linkedin.com/in/ludmila-kurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/ludmilka-k?tab=repositories" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">&copy; 2023 Ludmila Kurochkina. All rights reserved.</p>
+            </address>
+        </div>
     </footer>
   </body>
 </html>

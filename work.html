@@ -13,92 +13,179 @@
 <body>
     <!-- Work page -->
     <!-- Header -->
-    <header>
-        <nav>
-            <a href="./index.html">
-                <img src="./images/logo.svg" alt="Jhon logo" />
-            </a>
-            <ul class="list">
-                <li>
-                    <a class="link" href="./blog.html">Blog</a>
-                </li>
-                <li>
-                    <a class="link current" href="./work.html">Work</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-      </header>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="./index.html" class="link">
+                    <img src="./images/icon.svg" alt="My logo" />
+                </a>
+                <ul class="list header-list">
+                    <li>
+                        <a class="link nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="link nav-link current" href="./work.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="link nav-link" href="./contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!--Work content -->
     <main>
-        <h1 class="page-title">Work</h1>
-        <ul class="list">
-            <li class="work-project">
-                <img src="./images/dashboard.jpg" alt="Designing Dashboards">
-                <h2 class="work-project-title">Designing Dashboards</h2>
-                <time class="work-project-year" datetime="2021-02-12">2020</time> | <span class="work-project-type">Dashboard</span>
-                <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
-                </p>
-            </li>
-            <li class="work-project">
-                <img src="./images/illustration.jpg" alt="Vibrant Portraits">
-                <h2 class="work-project-title">Vibrant Portraits</h2>
-                <time class="work-project-year" datetime="2021-02-12">2018</time> | <span class="work-project-type">Illustration</span>
-                <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
-                </p>
-            </li>
-            <li class="work-project">
-                <img src="./images/typography.jpg" alt="Typography Type">
-                <h2 class="work-project-title">36 Days of Malayalam Type</h2>
-                <time class="work-project-year" datetime="2021-02-12">2018</time> | <span class="work-project-type">Typography</span>
-                <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
-                </p>
-            </li>
-            <li class="work-project">
-                <img src="./images/components.jpg" alt="Components Design">
-                <h2 class="work-project-title">Components</h2>
-                <time class="work-project-year" datetime="2021-02-12">2017</time> | <span class="work-project-type">Components, Design</span>
-                <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.
-                </p>
-            </li>
-        </ul>
+        <section class="section work-container">
+            <div class="container">
+                <div class="wrapper">
+                    <h1 class="page-title">Work</h1>
+<!--                    <a class="view-all-link" href="./work.html">View all</a>-->
+                </div>
+                <ul class="list work-list">
+                    <li class="work-project">
+                        <a href="https://ludmilka-k.github.io/team-light-balance/"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Site"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/mimino-collage.jpeg" alt="Landing site" width="276">
+                                <p class="text-overlay">
+                                    [HTML, CSS, JavaScript, Vite ]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Landing Site</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">Mimino</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Team Lead, developer.</span>
+                            <p class="text">
+                                A website of a hotel-restaurant complex Mimino. Answerable for: setting repository, code
+                                review,resolving conflicts, overall composing of the project, developer of footer.
+                            </p>
+<!--                            <p>-->
+<!--                                Accomplishments: Was a Team Leader in the team project "Mimino”( 9 people, 1 week).-->
+<!--                                We completed all the tasks successfully.-->
+<!--                            </p>-->
+                        </div>
+                    </li>
+                    <li class="work-project">
+                        <a href="https://ludmilka-k.github.io/goit-markup-hw-07/"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Site"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/webstudio-image.jpg" alt="Landing site" width="276">
+                                <p class="text-overlay">
+                                    [HTML, CSS, JavaScript, Adaptive Design]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Responsive Site</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">WebStudio</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Developer.</span>
+                            <p class="text">
+                                A website of WebStudio company. Adaptive design, transform effects, modal windows.<br>
+                                Individual project.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="work-project">
+                        <a href="https://bogdantitsky.github.io/js-team-project-12/"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Platform"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/cinemania-trends.jpg" alt="Search platform" width="276" >
+                                <p class="text-overlay">
+                                    [ HTML, CSS, JavaScript, REST API, Vite ]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Search Platform</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">Cinemania</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Scrum Master, developer.</span>
+                            <p class="text">
+                                A website of a Cinemania with an adaptive layout. Answerable for: sprint planning of
+                                tasks in Trello, control the deadline, developer of Weekly trends section, star rating,
+                                script for modal window.
+                            </p>
+<!--                            <p>-->
+<!--                                Accomplishments: Was a Scrum Master in the project "Cinemania"( 13 people, 8 days).-->
+<!--                                But in the middle of the project two people was canceled their participation.-->
+<!--                                I rescheduled the tasks and the team was able to complete the project by the deadline.-->
+<!--                            </p>-->
+                        </div>
+                    </li>
+                    <li class="work-project">
+                        <a href="https://ludmilka-k.github.io/goit-js-hw-11/02-async-scroll.html"
+                           class="work-project-link link"
+                           target="_blank"
+                           title="Site"
+                           rel="noopener nofollow">
+                            <div class="img-thumb">
+                                <img src="./images/container.jpg" alt="Landing site" width="276">
+                                <p class="text-overlay">
+                                    [HTML, CSS, JavaScript, RestAPI, Parsel]
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <p class="project-card-type">Search Platform</p>
+                            </div>
+                        </a>
+                        <div class="work-project-info">
+                            <h3 class="work-project-title">Image Finder</h3>
+                            <time class="work-project-year" datetime="2021-02-12">2023</time> | <span class="work-project-role"> Role: Developer.</span>
+                            <p class="text">
+                                A photo search site. Connection REST API. Implemented with a scroll and Load More button.<br>
+                                Individual project.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <address class="text-address">
-          <ul class="list">
-            <li>
-              <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                <img src="./images/figma.svg" alt="Link to Figma" />
-              </a>
-            </li>
-            <li>
-              <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                <img src="./images/twitter.svg" alt="Link to Twitter" />
-              </a>
-            </li>
-            <li>
-              <a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                <img src="./images/instagram.svg" alt="Link to Instagram" />
-              </a>
-            </li>
-          </ul>
-          <p class="copyright">&copy; 2022 Your Name. All rights reserved.</p>
-        </address>
-      </footer>
+    <footer class="footer">
+        <div class="container">
+            <address class="text-address">
+                <ul class="list footer-list">
+                    <li>
+                        <a class="link" href="https://t.me/LKurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.linkedin.com/in/ludmila-kurochkina" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/ludmilka-k?tab=repositories" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="footer-social-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">&copy; 2023 Ludmila Kurochkina. All rights reserved.</p>
+            </address>
+        </div>
+    </footer>
 </body>
 </html>
