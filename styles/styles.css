@@ -348,16 +348,18 @@ img {
 .work-list > .work-project >{
     display: flex;
     align-items: center;
-    /*padding-top: 80px;*/
-    /*padding-bottom: 80px;*/
 }
 .work-list > .work-project:nth-child(2n) {
     flex-direction: row-reverse;
-    /*padding-right: 16px;*/
     background-color: var(--color-background-brand);
 }
 
 /* Contacts page styles */
+.contacts-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contacts-page-title {
     font-weight: 700;
     font-size: 40px;
@@ -366,17 +368,16 @@ img {
     margin-bottom: 40px;
 }
 .address-list  {
-    column-count: 2;
-    column-gap: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    /*column-count: 2;*/
+    /*column-gap: 100px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
 }
 .address-item {
     margin-bottom: 8px;
 }
-.address-item:nth-child(-n + 3) {
-    margin-left: 120px;
-}
+
 .address-link:hover,
 .address-link:focus {
     color: var(--color-brand);
